@@ -1,0 +1,5 @@
+const button=document.querySelector('.menu-toggle');
+const menu=document.querySelector('#menu');
+if(button&&menu){button.addEventListener('click',()=>{const open=button.getAttribute('aria-expanded')==='true';button.setAttribute('aria-expanded',String(!open));menu.classList.toggle('open',!open);});menu.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{menu.classList.remove('open');button.setAttribute('aria-expanded','false');}));}
+const year=document.querySelector('#year');if(year)year.textContent=new Date().getFullYear();
+const form=document.querySelector('#contact-form');if(form){form.addEventListener('submit',event=>{event.preventDefault();if(!form.reportValidity())return;const d=new FormData(form);const subject=encodeURIComponent('Demande de contact BeThom');const body=encodeURIComponent(`Nom : ${d.get('nom')}\nEmail : ${d.get('email')}\nService : ${d.get('service')}\nBudget : ${d.get('budget')}\n\n${d.get('message')}`);window.location.href=`mailto:beethom@gmail.com?subject=${subject}&body=${body}`;});}

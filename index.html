@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BeThom — Thomas, graphiste freelance : design graphique, UI et illustration.">
+  <title>BeThom — Thomas, graphiste freelance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a class="brand" href="#accueil">BeThom</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="sr-only">Ouvrir le menu</span><span></span><span></span>
+      </button>
+      <ul class="menu" id="menu">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#articles">Blog</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="accueil" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="kicker">Graphiste freelance</p>
+        <h1 id="hero-title">Hi, Je suis Thomas,<br>Graphiste</h1>
+        <p>Passionné par le design, j’aide les entreprises et les créateurs à développer des sites modernes, performants et adaptés à leurs besoins. Mon objectif est de transformer vos idées en expériences numériques fluides et efficaces.</p>
+        <a class="cv-button" href="assets/cv-thomas.pdf" download>Télécharger mon CV</a>
+      </div>
+      <div class="portrait-frame">
+        <img src="assets/portrait.jpg" alt="Portrait de Thomas, graphiste freelance">
+      </div>
+    </section>
+
+    <section class="services section-band" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-heading"><h2 id="services-title">Services / Compétences</h2><p>Mes domaines d’intervention</p></div>
+        <div class="service-grid">
+          <article class="service-card"><span class="service-number">01</span><h3>Design graphique</h3><p>Créer des identités visuelles cohérentes et des supports de communication qui donnent du caractère à votre marque.</p></article>
+          <article class="service-card"><span class="service-number">02</span><h3>UI design</h3><p>Imaginer des interfaces claires, accessibles et agréables à utiliser, du premier écran au dernier détail.</p></article>
+          <article class="service-card"><span class="service-number">03</span><h3>Illustration</h3><p>Donner vie à vos idées avec des illustrations originales, expressives et adaptées à votre univers.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="articles section-band" id="articles" aria-labelledby="articles-title">
+      <div class="container">
+        <div class="section-heading"><h2 id="articles-title">Articles récents</h2><a href="#articles">View all</a></div>
+        <div class="article-grid">
+          <article class="article-card">
+            <h3>Créer un design system à partir de zéro</h3>
+            <div class="meta"><time datetime="2020-02-12">12 Feb 2020</time><span>Design, Pattern</span></div>
+            <p>Dans cet article, je partage mon approche pour mettre en place un design system clair et efficace, afin de garantir la cohérence visuelle d’un projet digital.</p>
+          </article>
+          <article class="article-card">
+            <h3>Créer des icônes pixel perfect dans Figma</h3>
+            <div class="meta"><time datetime="2020-02-12">12 Feb 2020</time><span>Figma, Icon Design</span></div>
+            <p>Découvrez mes techniques pour concevoir des icônes nettes et précises dans Figma, adaptées aussi bien au web qu’aux applications mobiles.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio container" id="portfolio" aria-labelledby="portfolio-title">
+      <h2 class="section-title" id="portfolio-title">Travaux en vedette</h2>
+      <div class="work-list">
+        <article class="work">
+          <img src="assets/dashboard.jpg" alt="Aperçu d’un tableau de bord numérique">
+          <div><h3>Design de tableaux de bord</h3><div class="work-meta"><span>2020</span><small>Dashboard</small></div><p>Un projet de conception d’interface utilisateur pour une plateforme de gestion. L’objectif était de proposer un tableau de bord intuitif et esthétique.</p></div>
+        </article>
+        <article class="work">
+          <img src="assets/illustration.jpg" alt="Illustration colorée d’un portrait féminin">
+          <div><h3>Portraits vibrants de 2020</h3><div class="work-meta"><span>2018</span><small>Illustration</small></div><p>Série d’illustrations numériques réalisées avec une palette de couleurs audacieuses, explorant l’identité et l’émotion à travers le portrait.</p></div>
+        </article>
+        <article class="work">
+          <img src="assets/typography.jpg" alt="Composition typographique décorative sur fond sombre">
+          <div><h3>36 jours de typographie</h3><div class="work-meta"><span>2018</span><small>Typography</small></div><p>Un projet créatif consistant à explorer et styliser les caractères de la typographie malayalam à travers une série de visuels graphiques.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact container" id="contact" aria-labelledby="contact-title">
+      <h2 class="section-title" id="contact-title">Me contacter</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Parlons-en</h3>
+          <p>Vous avez une grande idée ou un projet à développer et besoin d’aide ? Contactez-moi, je serai ravi d’échanger avec vous et de vous accompagner.</p>
+          <h3>Email</h3><a href="mailto:beethom@gmail.com">beethom@gmail.com</a>
+          <h3>Socials</h3>
+          <ul class="social-text"><li><a href="#contact">Instagram</a></li><li><a href="#contact">Twitter</a></li><li><a href="#contact">Facebook</a></li></ul>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="field"><label for="nom">Nom</label><input id="nom" name="nom" autocomplete="name" required></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="service">Quel service vous intéresse</label><select id="service" name="service" required><option value="">Sélectionner un type de projet</option><option>Design graphique</option><option>UI design</option><option>Illustration</option><option>Autre</option></select></div>
+          <div class="field"><label for="budget">Budget</label><select id="budget" name="budget"><option value="">Sélectionner un budget</option><option>Moins de 500 €</option><option>500 à 1 500 €</option><option>1 500 à 3 000 €</option><option>Plus de 3 000 €</option></select></div>
+          <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="6" required></textarea></div>
+          <button type="submit">Envoyer</button>
+          <p class="form-note" aria-live="polite">Le formulaire prépare un e-mail dans votre logiciel de messagerie.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="social-icons" aria-label="Réseaux sociaux"><a href="#contact" aria-label="Facebook">f</a><a href="#contact" aria-label="Instagram">◎</a><a href="#contact" aria-label="Twitter">♥</a><a href="#contact" aria-label="LinkedIn">in</a></div>
+    <p>Copyright © <span id="year"></span> All rights reserved</p>
+  </footer>
+</body>
+</html>
