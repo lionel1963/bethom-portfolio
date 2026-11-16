@@ -106,11 +106,38 @@
           <ul class="social-text"><li><a href="#contact">Instagram</a></li><li><a href="#contact">Twitter</a></li><li><a href="#contact">Facebook</a></li></ul>
         </div>
         <form class="contact-form" id="contact-form">
-          <div class="field"><label for="nom">Nom</label><input id="nom" name="nom" autocomplete="name" required></div>
-          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
-          <div class="field"><label for="service">Quel service vous intéresse</label><select id="service" name="service" required><option value="">Sélectionner un type de projet</option><option>Design graphique</option><option>UI design</option><option>Illustration</option><option>Autre</option></select></div>
-          <div class="field"><label for="budget">Budget</label><select id="budget" name="budget"><option value="">Sélectionner un budget</option><option>Moins de 500 €</option><option>500 à 1 500 €</option><option>1 500 à 3 000 €</option><option>Plus de 3 000 €</option></select></div>
-          <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="6" required></textarea></div>
+          <div class="field">
+            <label for="nom">Nom</label>
+            <input id="nom" name="nom" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="service">Quel service vous intéresse</label>
+            <select id="service" name="service" required>
+              <option value="">Sélectionner un type de projet</option>
+              <option>Design graphique</option>
+              <option>UI design</option>
+              <option>Illustration</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="budget">Budget</label>
+            <select id="budget" name="budget">
+              <option value="">Sélectionner un budget</option>
+              <option>Moins de 500 €</option>
+              <option>500 à 1 500 €</option>
+              <option>1 500 à 3 000 €</option>
+              <option>Plus de 3 000 €</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
           <button type="submit">Envoyer</button>
           <p class="form-note" aria-live="polite">Le formulaire prépare un e-mail dans votre logiciel de messagerie.</p>
         </form>
